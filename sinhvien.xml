@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lophoc>
+    <sinhvien>
+        <name>Le Van Mong</name>
+        <id>KTPM2211055</id>
+        <subjects>
+            <subject>
+                <subject_name>Toán</subject_name>
+                <score>10</score>
+            </subject>
+            <subject>
+                <subject_name>Tiếng anh</subject_name>
+                <score>9</score>
+            </subject>
+        </subjects>
+    </sinhvien>
+    <sinhvien>
+        <name>Nguyễn Thành Đợi</name>
+        <id>KTPM2211067</id>
+        <subjects>
+            <subject>
+                <subject_name>Toán</subject_name>
+                <score>9</score>
+            </subject>
+            <subject>
+                <subject_name>Tiếng anh</subject_name>
+                <score>10</score>
+            </subject>
+        </subjects>
+    </sinhvien>
+</lophoc>
