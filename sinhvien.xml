@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+<!DOCTYPE lophoc [
+    <!ELEMENT lophoc (sinhvien+)>
+    <!ELEMENT sinhvien (name, id, subjects)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT subjects (subject+)>
+    <!ELEMENT subject (subject_name, score)>
+    <!ELEMENT subject_name (#PCDATA)>
+    <!ELEMENT score (#PCDATA)>
+]>
+
+
+<!-- XML -->
 <lophoc>
     <sinhvien>
         <name>Le Van Mong</name>

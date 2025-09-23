@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+ <!DOCTYPE sanpham_list [
+    <!ELEMENT sanpham_list (sanpham+)>
+    <!ELEMENT sanpham EMPTY>
+    <!ATTLIST sanpham
+        id ID #REQUIRED
+        category CDATA #REQUIRED
+        price CDATA #REQUIRED
+        currency CDATA #REQUIRED
+    >
+]>
+
+
+
+<!-- XML -->
 <sanpham_list>
     <sanpham 
         id="SP001" 

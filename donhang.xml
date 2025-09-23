@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<orders xmlns:order="http://company.com/order" xmlns:prod="http://company.com/product">
-    <order:order id="O001" customer="Nguyễn Văn A" date="2025-03-02">
-        <prod:item id="P001" quantity="2" price="500">
-            <prod:name>Samsung</prod:name>
-        </prod:item>
-        <prod:item id="0002" quantity="3" price="5500">
-            <prod:name>Xiaomi</prod:name>
-        </prod:item>
-    </order:order>
-    <order:order id="O003" customer="Nguyễn Văn A" date="2025-03-02">
-        <prod:item id="P001" quantity="2" price="1500">
-            <prod:name>Vivo</prod:name>
-        </prod:item>
-        <prod:item id="O004" quantity="3" price="1000">
-            <prod:name>Apple</prod:name>
-        </prod:item>
-    </order:order>
+
+<!-- DTD -->
+<!DOCTYPE orders [
+    <!ELEMENT orders (order+)>
+    <!ELEMENT order (item+)>
+    <!ATTLIST order
+        id CDATA #REQUIRED
+        customer CDATA #REQUIRED
+        date CDATA #REQUIRED
+    >
+    <!ELEMENT item (name)>
+    <!ATTLIST item
+        id CDATA #REQUIRED
+        quantity CDATA #REQUIRED
+        price CDATA #REQUIRED
+    >
+    <!ELEMENT name (#PCDATA)>
+]>
+
+<!-- XML -->
+<orders>
+    <order id="O001" customer="Nguyễn Văn A" date="2025-03-02">
+        <item id="P001" quantity="2" price="500">
+            <name>Samsung</name>
+        </item>
+        <item id="P002" quantity="3" price="5500">
+            <name>Xiaomi</name>
+        </item>
+    </order>
+
+    <order id="O003" customer="Nguyễn Văn A" date="2025-03-02">
+        <item id="P003" quantity="2" price="1500">
+            <name>Vivo</name>
+        </item>
+        <item id="P004" quantity="3" price="1000">
+            <name>Apple</name>
+        </item>
+    </order>
 </orders>
