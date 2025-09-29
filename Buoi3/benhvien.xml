@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+<!DOCTYPE hospital [
+    <!ELEMENT hospital (appointment+)>
+    
+    <!ELEMENT appointment (patient, doctor)>
+    <!ATTLIST appointment
+        id ID #REQUIRED
+        date CDATA #REQUIRED
+        status CDATA #IMPLIED>
+
+    <!ELEMENT patient (name, dob)>
+    <!ATTLIST patient id ID #REQUIRED>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT dob (#PCDATA)>
+
+    <!ELEMENT doctor (name, specialty)>
+    <!ATTLIST doctor id ID #REQUIRED>
+
+    <!ELEMENT specialty (#PCDATA)>
+]>
+
+<!-- XML -->
+<hospital>
+
+    <!-- Cuộc hẹn 1 -->
+    <appointment id="A001" date="2025-03-05" status="Đã khám">
+        <patient id="P001">
+            <name>Lê Văn Mộng</name>
+            <dob>1990-07-15</dob>
+        </patient>
+        <doctor id="D001">
+            <name>Nguyễn Thành Đợi</name>
+            <specialty>Nội khoa</specialty>
+        </doctor>
+    </appointment>
+
+    <!-- Cuộc hẹn 2 -->
+    <appointment id="A002" date="2025-04-10" status="Chưa khám">
+        <patient id="P002">
+            <name>Bùi Hữu Nhật</name>
+            <dob>1985-12-20</dob>
+        </patient>
+        <doctor id="D002">
+            <name>Lê Văn Dinh</name>
+            <specialty>Ngoại khoa</specialty>
+        </doctor>
+    </appointment>
+
+</hospital>

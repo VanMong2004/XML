@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML -->
+<danhsach_sinhvien>
+    <sinhvien id="SV001">
+        <name>Lê Văn Mộng</name>
+        <dob>2000-05-15</dob>
+        <major>Công nghệ thông tin</major>
+    </sinhvien>
+    <sinhvien id="SV002">
+        <name>Nguyễn Thành Đợi</name>
+        <dob>2001-08-22</dob>
+        <major>Quản trị kinh doanh</major>
+    </sinhvien>
+    <sinhvien id="SV003">
+        <name>Phan Thanh Nhã</name>
+        <dob>1999-12-10</dob>
+        <major>Kế toán</major>
+    </sinhvien>
+</danhsach_sinhvien>

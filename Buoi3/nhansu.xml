@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+<!DOCTYPE company [
+    <!ELEMENT company (department+)>
+    <!ELEMENT department (employee+)>
+    <!ELEMENT employee (name, position)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT position (#PCDATA)>
+
+    <!ATTLIST department name CDATA #REQUIRED>
+    <!ATTLIST employee id CDATA #REQUIRED>
+]>
+
+<!-- XML -->
+<company>
+    <department name="CNTT">
+        <employee id="K001">
+            <name>Lê Văn Mộng</name>
+            <position>Lập trình viên</position>
+        </employee>
+        <employee id="K002">
+            <name>Nguyễn Thành Đợi</name>
+            <position>Học viên</position>
+        </employee>
+    </department>
+
+    <department name="CNSH">
+        <employee id="C001">
+            <name>Huỳnh Đăng Khoa</name>
+            <position>Trưởng phòng ban</position>
+        </employee>
+        <employee id="C002">
+            <name>Bùi Hữu Nhật</name>
+            <position>Học viên</position>
+        </employee>
+    </department>
+</company>
