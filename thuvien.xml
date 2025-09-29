@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- DTD -->
-<!DOCTYPE thuvien [
-    <!ELEMENT thuvien (sach+)>
-    <!ELEMENT sach (title, author, year, genre)>
-    <!ELEMENT title (#PCDATA)>
-    <!ELEMENT author (#PCDATA)>
-    <!ELEMENT year (#PCDATA)>
-    <!ELEMENT genre (#PCDATA)>
-]>
-
-
 <!-- XML -->
 <thuvien>
-    <sach>
+    <sach id="S01">
         <title>Đắc Nhân Tâm</title>
         <author>Dale Carnegie</author>
         <year>1936</year>
         <genre>Kỹ năng sống</genre>
     </sach>
-    <sach>
+    <sach id="S02">
         <title>Lập Trình C++ Cơ Bản</title>
         <author>Nguyễn Văn A</author>
         <year>2020</year>
         <genre>Giáo trình</genre>
     </sach>
-    <sach>
+    <sach id="S03">
         <title>Harry Potter và Hòn đá Phù thủy</title>
         <author>J.K. Rowling</author>
         <year>1997</year>

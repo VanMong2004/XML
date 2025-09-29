@@ -1,46 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- DTD -->
-<!DOCTYPE lophoc [
-    <!ELEMENT lophoc (sinhvien+)>
-    <!ELEMENT sinhvien (name, id, subjects)>
-    <!ELEMENT name (#PCDATA)>
-    <!ELEMENT id (#PCDATA)>
-    <!ELEMENT subjects (subject+)>
-    <!ELEMENT subject (subject_name, score)>
-    <!ELEMENT subject_name (#PCDATA)>
-    <!ELEMENT score (#PCDATA)>
-]>
-
-
 <!-- XML -->
-<lophoc>
-    <sinhvien>
-        <name>Le Van Mong</name>
-        <id>KTPM2211055</id>
-        <subjects>
-            <subject>
-                <subject_name>Toán</subject_name>
-                <score>10</score>
-            </subject>
-            <subject>
-                <subject_name>Tiếng anh</subject_name>
-                <score>9</score>
-            </subject>
-        </subjects>
+<danhsach_sinhvien>
+    <sinhvien id="SV001">
+        <name>Lê Văn Mộng</name>
+        <dob>2000-05-15</dob>
+        <major>Công nghệ thông tin</major>
     </sinhvien>
-    <sinhvien>
+    <sinhvien id="SV002">
         <name>Nguyễn Thành Đợi</name>
-        <id>KTPM2211067</id>
-        <subjects>
-            <subject>
-                <subject_name>Toán</subject_name>
-                <score>9</score>
-            </subject>
-            <subject>
-                <subject_name>Tiếng anh</subject_name>
-                <score>10</score>
-            </subject>
-        </subjects>
+        <dob>2001-08-22</dob>
+        <major>Quản trị kinh doanh</major>
     </sinhvien>
-</lophoc>
+    <sinhvien id="SV003">
+        <name>Phan Thanh Nhã</name>
+        <dob>1999-12-10</dob>
+        <major>Kế toán</major>
+    </sinhvien>
+</danhsach_sinhvien>

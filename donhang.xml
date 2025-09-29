@@ -1,40 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<ds_donhang>
+    <donhang id="O001">
+        <sanpham id="P001">
+            <ten>Điện thoại iPhone 14</ten>
+            <soluong>2</soluong>
+        </sanpham>
+        <sanpham id="P002">
+            <ten>Laptop Dell</ten>
+            <soluong>1</soluong>
+        </sanpham>
+    </donhang>
 
-<!-- DTD -->
-<!DOCTYPE orders [
-    <!ELEMENT orders (order+)>
-    <!ELEMENT order (item+)>
-    <!ATTLIST order
-        id CDATA #REQUIRED
-        customer CDATA #REQUIRED
-        date CDATA #REQUIRED
-    >
-    <!ELEMENT item (name)>
-    <!ATTLIST item
-        id CDATA #REQUIRED
-        quantity CDATA #REQUIRED
-        price CDATA #REQUIRED
-    >
-    <!ELEMENT name (#PCDATA)>
-]>
-
-<!-- XML -->
-<orders>
-    <order id="O001" customer="Nguyễn Văn A" date="2025-03-02">
-        <item id="P001" quantity="2" price="500">
-            <name>Samsung</name>
-        </item>
-        <item id="P002" quantity="3" price="5500">
-            <name>Xiaomi</name>
-        </item>
-    </order>
-
-    <order id="O003" customer="Nguyễn Văn A" date="2025-03-02">
-        <item id="P003" quantity="2" price="1500">
-            <name>Vivo</name>
-        </item>
-        <item id="P004" quantity="3" price="1000">
-            <name>Apple</name>
-        </item>
-    </order>
-</orders>
+    <donhang id="O002">
+        <sanpham id="P003">
+            <ten>Tai nghe Bluetooth</ten>
+            <soluong>3</soluong>
+        </sanpham>
+    </donhang>
+</ds_donhang>
